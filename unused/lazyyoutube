@@ -1,0 +1,12 @@
+<html>
+<head>
+
+</head>
+<body>
+<div class="youtube" id="tsZd8_ojPw8" style="width=560px; height=315px;"></div>
+  <script src="https://labnol.googlecode.com/files/youtube.js">
+    //lazy loading script - Ta, Google..
+  </script>
+</div>
+</body>
+</html>

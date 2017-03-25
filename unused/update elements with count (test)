@@ -1,0 +1,22 @@
+<script>
+  var x = 0;
+  function myFunction() {
+    var txt = x += 1;
+    console.log (txt);
+    document.getElementById("spanInner").innerHTML = "counting: "+txt;
+    if (x>7)
+      document.getElementsByTagName('div')[0].innerHTML.spanInner = "FIRED! "+txt;
+    if (x>10)
+        document.getElementById("hello").appendChild(document.createTextNode("and still counting")); //doesn't get called
+    if (x>15)
+      document.getElementsByTagName('div')[0].innerHTML = "Try to output >"+document.body.style.height+"<"; // how to access and use properties?
+
+  }
+</script>
+
+<script>
+  document.getElementsByTagName('div')[1].innerHTML = "Access property: "+document.body.style.height;
+</script>
+
+
+<! NB - this doesn't work as intended ->
