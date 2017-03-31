@@ -1,0 +1,51 @@
+/*not all styles are here- can only be found within index.html or main.js*/
+
+.bg {
+  background-image: url(pondering.jpg), linear-gradient(to bottom, #030304 60vw, #201517 80vw, #080d16 100%);
+  background-size: 100%;
+  background-repeat: no-repeat;                                        /* Image (c) user Danijeln88 @ alphacoders.com */
+  background-color: #e6e6fa;
+  }
+
+  .sky-colour-text {
+    color: #7c686c;
+  }
+
+  .accessible {
+    color: white;
+  }
+
+  .main-text {
+      font-size: 18;
+      font-family: "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+  }
+
+  .indent-me {
+      text-indent: 0px;
+      max-width: 160vh;
+      margin-left: 20vh;
+  }
+
+  .dark-colour-bg {
+    color: #050709;
+    }
+
+  .header {
+    height: 40%;
+    color: #ffddee;
+    font-size: 10vw;
+    text-align: center;       /* Uh-oh! test vw etc on firefox <50 */
+  }
+
+  a {
+    color: #9c787c;
+    text-decoration: none;
+    border-bottom: 1px dotted #7c787c;
+  }
+
+  .noBgButton{
+    background: none;
+    border: none;
+  }
+
+</style>
