@@ -1,7 +1,9 @@
-/*not all styles are here- can only be found within index.html or main.js*/
+/*not all styles are here- some can only be found within index.html or main.js*/
+@import url('https://fonts.googleapis.com/css?family=Allerta+Stencil');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 .bg {
-  background-image: url(pondering.jpg), linear-gradient(to bottom, #030304 60vw, #201517 80vw, #080d16 100%);
+  background-image: url(pondering.jpg), linear-gradient(to bottom, #030304 58vw, #261517 63vw, #080d16 100%);
   background-size: 100%;
   background-repeat: no-repeat;                                        /* Image (c) user Danijeln88 @ alphacoders.com */
   background-color: #e6e6fa;
@@ -17,7 +19,7 @@
 
   .main-text {
       font-size: 18;
-      font-family: "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+      font-family: Montserrat, "Myriad Pro", "Gill Sans", Calibri, sans-serif;
   }
 
   .indent-me {
@@ -33,8 +35,9 @@
   .header {
     height: 40%;
     color: #ffddee;
-    font-size: 10vw;
-    text-align: center;       /* Uh-oh! test vw etc on firefox <50 */
+    font-size: 10vw;            /* Uh-oh! test vw etc on firefox <50 */
+    font-family: "Allerta Stencil", Futura, Ubuntu, LucidaGrande, "Lucida Sans", monospace;
+    text-align: center;
   }
 
   a {
@@ -47,5 +50,3 @@
     background: none;
     border: none;
   }
-
-</style>
