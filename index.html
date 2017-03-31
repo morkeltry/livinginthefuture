@@ -2,130 +2,35 @@
 <head>
   <title>Living In The Future</title>
   <meta charset="utf-8"/>
+  <link rel = "stylesheet" type = "text/css" href = "main.css" />
+  <script src="main.js">
+    </script>
 </head>
-<style>
-.bg {
-  background-image: url(pondering.jpg), linear-gradient(to bottom, #030304 60vw, #201517 80vw, #080d16 100%);
-  background-size: 100%;
-  background-repeat: no-repeat;                                        /* Image (c) user Danijeln88 @ alphacoders.com */
-  background-color: #e6e6fa;
-  /*  color: #6c686c;*/
-
-
-  }
-
-  .sky-colour-text {
-    color: #6c686c;
-  }
-
-  .accessible {
-    color: white;
-  }
-
-  .main-text {
-      font-size: 18;
-      font-family: "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif
-    }
-
-  /*#main p {
-      font-size: 36;
-
-  } */
-  .dark-colour-bg {
-    color: #050709;
-    }
-  .header {
-    height: 40%;              /*currently related to: bgheight*5px -not good way */
-    color: #ffddee;
-    font-size: 10vw;
-    text-align: center;       /* Uh-oh! test vw etc on firefox <50 */
-  }
-
-  a{
-    color: #7c787c;
-    text-decoration: none;
-    border-bottom: 1px dotted #7c787c;
-  }
-
-  .noBgButton{
-    background: none;
-    border: none;
-  }
-
-</style>
 <!- if screen.width < screen.height blah ->
-
-<script>
-    var aspect = 1920/1080;
-    var visAccessibility = false;
-
-    function toggleAccessibilitySwitch(){
-      visAccessibility = !visAccessibility;
-      colouredTextElements = document.body.getElementsByClassName("sky-colour-text");
-      for (var i=colouredTextElements.length; i--; i<=0)
-        if (visAccessibility)
-          colouredTextElements[i].className += " accessible";
-        else
-          colouredTextElements[i].classList.remove("accessible");
-
-      renderAccessibilitySwitch();
-    }
-
-    function makeNewAccessibilitySwitch(){
-      var toggle = document.createElement("Button");
-      toggle.className = "noBgButton main-text";
-      document.body.appendChild(toggle);
-      toggle.id = "visAccSwitch";
-      toggle.onclick = function() {
-        toggleAccessibilitySwitch();
-      };
-    }
-
-    function renderAccessibilitySwitch() {
-      if (document.getElementById('visAccSwitch') ==null)
-        makeNewAccessibilitySwitch();
-      toggle = document.getElementById('visAccSwitch');
-      toggle.style = "top: 58vw; right:15px; position:absolute; z-index: 99; color: white; font-weight: bold; text-align: center; text-shadow: 2px -2px 8px black;";
-
-      if (visAccessibility){
-        toggle.innerHTML = "CLICK FOR<br>MELLOW TEXT";
-      }
-      else {
-        toggle.innerHTML = "CLICK FOR<br>WHITE TEXT";
-        toggle.className = "noBgButton main-text";
-      }
-    }
-
-    function placeText (){
-      var bgHeight = document.body.offsetWidth/ aspect;
-      document.getElementById('topbit').style.height = bgHeight*0.83 + 'px';
-      renderAccessibilitySwitch();
-    }
-
-</script>
 
 <body onload="placeText()" onresize="placeText()" class="bg">
 <div class="header red-text" id="topbit">
   living in the future
 </div>
 
-<div class="sky-colour-text main-text ">
-  <p class="main-text" style="width:35%; text-shadow: 2px -2px 8px black">
+<div class="sky-colour-text main-text" style="text-shadow: 2px -2px 8px black">
+
+  <p class="main-text" style="width:35%; margin-left: 5vh;">
     I'm going to outline how I think technology, economics and society will affect each other in the future.
   </p>
-  <p style="width:55%; text-shadow: 2px -2px 8px black">
+  <p style="width:50%; margin-left: 10vh;">
     Chances are you'll disagree with some of my predicitions and analyses.
     But the point of this page is not to convince you (though, hey, if you share my outlook, that's great!).
     What I'm really hoping to explain is why I want to turn my life to coding and developing technologies.
   </p>
-</div>
 
-<div class="sky-colour-text main-text ">
-
-  <p class="main-text" style="width:75%">
+  <p style="width:65%; margin-left: 15vh;">
     Are you sitting comfortably? <br>
     Then I'll begin....
   </p><br>
+</div>
+
+<div class="sky-colour-text main-text indent-me">
 
   <p>The structure of society, in terms of the state, the economy, employment and
   democracy, is changing fundamentally.</p>
@@ -135,7 +40,7 @@
   change. Founders and Coders is a great example of the kind of innovation in
   society which has been enabled, rather than merely pushed, by change.</p>
 
-  <p>To say the information revolution is <a href="#">comparable</a> to the industrial revolution
+  <p>To say the information revolution is comparable to the industrial revolution
   is not an overstatement. And further, in terms of technological literacy and
   adoption, we are approaching a tipping point, so that the <a title="(let's say 2010-2025)" href="#">period</a>
   we are now in, is crucial in deciding the direction these changes will
@@ -155,17 +60,11 @@
   replaced by something even smarter. But by what? I hope it will be something
   more decentralised, modular and more responsive to its users' needs rather than
   the needs of monetisable innovations from the centre. But whether it is will
-  depend on who chooses to build it. But perhaps a better example is in the realm
+  depend on who chooses to build it. Perhaps a better example is in the realm
   of democracy. There, there has been no profit motive to
   drive new technology and so the field is wide open, to be designed as we
   choose!</p>
-  <p>Almost anyone who has been involved in collective decision making, whether in
-  a hierarchy such as most workplaces, whether in a democracy as small as a
-  ten-person housing co-op or whether engaging with one as large as their national
-  government, will have found it a slow and often frustrating process. In fact,
-  the more truly and transparently power in an organisation is decentralised, the
-  more unproductive labour it requires to engage in its processes. And that turns
-  people off.</p>
+
 </td>
 <td>
   <img src="robotboss.png" style="width: 35vw; height: auto; padding: 30px; border: 0px;">  <! Image (c) Kazim Ladimeji->
@@ -182,17 +81,18 @@ people off.</p>
 
 <p>Democracy is dying a slow death. Liberal-democratic states are experiencing a
 <a title="crisis of legitimation: a state retains its legal authority but loses moral authority over social norms, so that citizens' compliance requires enforcement instead" href="//www.controlrisks.com/en/our-thinking/analysis/the-crisis-of-legitimacy">crisis of legitimation</a>,
-which will become something very unpleasant unless
-there's some technological game-changer. Trump used his data analytic
-<a title="" href="//www.theregister.co.uk/2017/03/07/cambridge_analytica_dystopianism/">game-changer</a>
+which will become something very unpleasant unless there's some game-changer
+(which almost certainly must be technological). Trump used his data analytic
+<a title="the difficulty of measuring up the grand claims of Cambridge Analytica against their supposed debunkers is an example of why even non-coders will increasingly need to 'think as a coder' in order to understand the world around them"
+href="//www.theregister.co.uk/2017/03/07/cambridge_analytica_dystopianism/">game-changer</a>
 to go from being a joke to being a president and this will very soon be a
 trend. I would hope that the trend can be neutralised- through technology
 enabling <a href="//voteflux.org/about/how/">direct democracy</a>, at a
 <a href="//dil.berkeley.edu/technology-portfolio/current-projects/cafe/">fine-granular</a>
 level, to counter different kinds of
 <a href="//www.transparency.org/news/pressrelease/europes_unregulated_lobbying_opens_door_to_corruption">state capture</a>
-(of which Trump is just one
-<a href="//www.theatlantic.com/business/archive/2017/01/trumps-appointees-conflicts-of-interest-a-crib-sheet/512711/">obvious example</a>).</p>
+(of which Trump represents just one
+<a href="//www.theatlantic.com/business/archive/2017/01/trumps-appointees-conflicts-of-interest-a-crib-sheet/512711/">obvious</a> example).</p>
 
 <p>On the smaller scale, technology can reduce by orders of magnitude the time
 individuals need to spend on the democracy of small groups. Currently, if you
@@ -207,7 +107,8 @@ take part in them. That's something technology can change. </p>
   fallen to almost zero and most people carry around a machine capable of secure
   encryption and multithreading in their pockets. But the tech economy hasn't
   adapted to it yet. Ten years from now, cryptocurrencies, smart city technology,
-  and meshing IoT devices will have taken society unawares, just as email did.
+  and <a href="//internetofthingsagenda.techtarget.com/feature/Using-mesh-networking-to-interconnect-IoT-devices">meshing</a>
+  IoT devices will have taken society unawares, just as email did.
   Compared to its full potential, P2P is still in its infancy. And someone will
   <a href="//shift.newco.co/bringing-up-machine-baby-bcaeb2bf6367">raise</a> the infant.
   Will that be Google, will it be a handful of start-up geniuses building the
@@ -216,10 +117,10 @@ take part in them. That's something technology can change. </p>
 
   <p>It's not only designing and building the technologies of the future that will
   give today's coders (and indeed founders) the chance to make their mark on the
-  world. But only people literate in systems, and particularly: coding;
+  world. But it is the people literate in systems, and particularly: coding;
   <a href="//edwardsnowden.com/revelations/">flows of data;</a>
   <a href="//harvardmagazine.com/2000/01/code-is-law-html">'code as law'</a>,
-  will have a meaningful influence on the changes of the
+  who will have meaningful influence on the changes of the
   21st century. In the coming era, there will be new <a href="//google.com">monopolies</a> formed but, on the
   other hand, also a considerable overgrowing of the world's existing established
   <a href="//www.goldmansachs.com">repositories of power</a> by new
